@@ -1,0 +1,100 @@
+<===========================================================================================================================================================================>
+
+commmands(git command with its syntax and properties):
+
+<==========================================================================================================================================================================>
+->ctrl+L: for clearing the screen in git bash
+
+->  ls(list):it will list all the files present in the directory you are working on GIT
+
+-> mdir(make directory): its used to make folder using given command- mkdir "project_name"
+
+-> cd(change directory):cd folder name in which you want to change
+
+-> cd .. : it is used for going back to the previous folder
+
+-> ls -a : we will use "ls -a" to see all the hidden folder
+
+->touch "filename": to create a file in the folder
+
+->vi "file name":to edit your file
+
+:**Press Esc to enter Command mode, and then type :wq to write and quit the file**
+
+->cat "file-name": for displying content of file on git bash 
+
+->rm -rf "file name":for deleting file from directory
+
+
+
+<==========================================================================================================================================================================>
+
+**git provide us repository(folder) where all the history is being stored and its named as ".git"**
+<===========================================================================================================================================================================>
+
+
+** ".git" folder is hidden **
+
+-> git init: its used to initialize empty git folder where history will be stored 
+after using above git will be initialized but it will not shown in the folder 
+
+
+fsda->git status: it will used to say changes made by you is present in the track or not
+ 
+**if its untracked and we want to make everyone know that change is being made  then we will do following things** 
+ 
+->git add "file-name" or "./": it will add all the changes made into staging area that they are ready to go into history files
+
+
+f
+->git commit -m "msg given by user "(m means msg you wanna show): it will save the changes made with given message  
+
+->git restore --staged "filename":it will remove the file from staging area if you did added them by mistake using "add ." command
+
+->git log: using this command we can see all the commits made by me
+
+->git reset "commit hash id": it will remove all the comit above particular given commit hash id and that commits will go under the stage area once again
+
+
+->git stash: it will add all the changes which is not commited into backstage and we can use it whenever we need it 
+
+-> git stash pop: it will get the untracked changes into staging area which was added to backstage area
+
+-> git stash clear: it will remove the changes which were held in backstage area
+<===========================================================================================================================================================================>
+
+**how we connect our github url to our local project**
+<===========================================================================================================================================================================>
+
+
+->git remote add origin "url of the gitub repositiry you made": it will only connect the url to your local project and your files wll not display in repository
+
+->git push origin branch name/master: for uploading your file into repositry
+
+->git remote -v
+
+**if you want to contribiute to any repositry firstly make a fork to your account**
+** we can not make changes directly to the repositary**
+** upstream will be the url of repository from where you took the file
+
+->git clone url: it is used to copy the repository to your project
+
+->git remote add upstream "url":upstream will be the url of repository from where you took the file
+
+->git branch "name":it will make branch 
+
+->git checkout "name": it will make head to new branch from master branch
+
+**for every new feature make a different pull request with different branch**
+
+
+<===========================================================================================================================================================================>
+how we can work with the exisiting projects
+<===========================================================================================================================================================================>
+
+-> we can not change the exisiting project of git hub
+-> so first we have to do some steps as follow:-
+	
+** make a copy of the project to your account for that you should click on fork and select the account you wanna copy it 
+
+	
